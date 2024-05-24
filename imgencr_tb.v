@@ -21,7 +21,7 @@ fd=$fopen("outputa.txt","w");
 //instantiation clk 
 clk = 1'b0;
 // this is for reading the input text file 
-$readmemh("ichip22_ps1_image_text.txt", data_in);
+$readmemh("image_text.txt", data_in);
 end
 
 always 
