@@ -1,5 +1,4 @@
-module imgencr(outbyte,inbyte,threshold,value,select,clk);
-// declaring the inputs and the outputs 
+module pixel_operator(outbyte,inbyte,threshold,value,select,clk);
 output reg [0:7] outbyte;
 input wire [0:7] inbyte;
 input wire [0:7] threshold;
@@ -7,7 +6,12 @@ input wire [0:7] value;
 input wire [0:1] select;
 input wire clk ;
 
-
+/*
+00 for increasing brightness 
+01 for decreasing brightness 
+10 for thresholding 
+11 for inverting the value 
+*/
 always @(posedge clk)
 begin 
 case(select)
