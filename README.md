@@ -5,5 +5,7 @@ We are also going to implement 2 functions namely read and open seperately if we
 we can proceed without them in other softwares such as VIVADO XLINX
 
 For running this code in VS CODE run the following commands in power shell after adding the imgencr,imgencr_tb files:
+
 iverilog -o imgencr_tb.vvp imgencr_tb.v
+
 vvp imgencr_tb.vvp
